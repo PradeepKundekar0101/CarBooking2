@@ -1,0 +1,1067 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #ecf0f1;
+}
+html{
+  font-size: 62.5%;
+}
+.btn-primary{
+  padding: 1vh 2vw;
+  background-color: #3498db;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  width: fit-content;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2;
+  background-image: url('');
+}
+.btn-primary:hover{
+  transform: scale(1.03);
+}
+/* ===========================================
+ NAV BAR 
+ ==============================================
+*/
+ .nav {
+  height: 5vw;
+  width: 90vw;
+  margin: 0px 5vw;
+  background: transparent;
+  position: relative;
+  margin-bottom: 5vh;
+  
+}
+.nav img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: rgb(0, 0, 0);
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color:#2e86de;
+  border-radius: 10px;
+  margin-right: 5px;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(255, 255, 255);
+  color: #000;
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid rgb(0, 0, 0);
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 90vw;
+   z-index: 10;
+    background-color: #ecf0f1;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+/*==============================================*/
+
+/*==============================================
+HERO Section START
+================================================*/
+
+.home .hero{
+  height: 100vh;
+  width: 90vw;
+  display: flex;
+  margin: 0 5vw;
+  align-items: center;
+  justify-content: space-between;
+}
+.home .hero .left{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+}
+.home  .hero .left h1{
+  font-size: 10rem;
+  width: 80%;
+  line-height: 15vh;
+  text-align: left;
+}
+.home  .hero .left h1 span{
+  color: #06c;
+}
+.home  .hero .left p{
+    color: rgb(29, 29, 29);
+    font-size: 1.8rem;
+   
+}
+
+.home  .hero .left button {
+  border: none;
+  padding: 1vh 2vw;
+  background-color:#06c;
+  color: #fff;
+  font-weight: bold;
+  width: 20vw;
+  margin-top: 10vh;
+  padding: 2vh 0px;
+  border-radius: 10px;
+  font-size: 2rem;
+}
+.hero .right .container{
+  height: 100vh;
+  background: #141E30; 
+  background: linear-gradient(to bottom, #243B55, #141E30); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.hero .right img{
+  width: 40vw;
+  transform: translate(-10vw,0);
+  
+}
+
+/*==============================================
+STEPS  START
+================================================*/
+.steps{
+  height: auto;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+  flex-direction: column;
+  padding: 10vh 5vw;
+
+}
+.steps h2,.aboutus h2,.services h3 , .map h2{
+  font-weight: 400;
+  text-align: center;
+  color: #2c3e50;
+  font-size: 3.5rem;
+}
+.steps h1,.aboutus h1, .services h1, .map h1{
+  font-size: 4rem;
+  text-align: center;
+}
+.steps .container .box i{
+  font-size: 5rem;
+  color: #06c;
+  margin-bottom: 20px;
+}
+.steps .container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 90vw;
+  margin-top: 10vh;
+}
+.steps .container .box{
+  width: 30rem;
+  text-align: center;
+  margin-top: 20px ;
+  
+}
+.steps .container .box p{
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+
+
+
+
+/*==============================================
+CAR CARD START
+================================================*/
+.services{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  flex-direction: column;
+  padding: 10vh 0px;
+}
+.services h1{
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.services a.showmore{
+  /* background-color: #1abc9c; */
+  text-transform: uppercase;
+  padding: 1rem 1rem;
+  border-bottom: .5rem solid rgb(0, 0, 0);
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 0.2s;
+  width: fit-content;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+.services a.showmore:hover{
+    color: #06c;
+    letter-spacing: .5rem;
+    border-color: #06c;
+}
+.services .cardContainer, .shop .cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.card , .bookedcard{
+  width: 37rem;
+  height: 420px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 0px 0px 7px -6px #000;
+}
+
+.card img, .bookedcard img{
+  width: 30rem  ;
+  border-radius: 10px;
+  height: 190px;
+}
+.services {
+  width: 90vw;
+  margin: 0px 5vw;
+}
+.card .bottom, .bookedcard .bottom{
+  align-self: center;
+  padding: 0px 15px;
+  height: 190px;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card .bottom button, .bookedcard .bottom button{
+  padding: 12px 15rem;
+  font-size: 1.7rem;
+  border-radius: 5px;
+  background-color: #06c;
+  transition: 0.2s;
+  cursor: pointer;
+  display: flex;justify-content: center;
+}
+.card .bottom button:hover{
+  background-color: #141E30;
+  
+}
+.card .bottom span.type, .bookedcard .bottom span.type{
+  border: 1px solid #000;
+  padding: 2px 5px;
+  border-radius: 5px;
+  width: fit-content;
+  margin-bottom: 8px;
+}
+.card .bottom span h3, .bookedcard .bottom span h3{
+  font-weight: 400;
+  margin-bottom: 8px;
+  font-size: 1.9rem;
+}
+.card .bottom div.specs,.bookedcard .bottom div.specs{
+  color: rgb(167, 167, 167);
+  font-size: 1.5rem;
+  margin: 5px 0px;
+}
+.bookedcard{
+  position: relative;
+}
+.bookedcard::after{
+  content: 'Booked';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 37rem;
+  height: 420px;
+  z-index: 1;
+  font-size: 3rem;
+  color: #eb3b5a;
+  background-color: #fff8;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+
+/*==============================================
+About US Start
+================================================*/
+
+.aboutus{
+  height: auto;
+  background-color: #fff;
+  width: 100vw;
+  padding:  10vh 5vw;
+
+}
+.aboutus .bottom .left img{
+  width: 40vw;
+}
+.aboutus .bottom {
+  display: flex;
+  margin-top: 10vh;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+
+}
+.aboutus .bottom h3{
+  font-size: 3rem;
+  border-bottom: 2px solid #f39c12;
+  width: fit-content;
+}
+.aboutus .bottom p{
+  font-size: 1.7rem;  
+  margin: 20px 0px;
+  width: 80%;
+}
+.aboutus .bottom .left,.aboutus .bottom .right{
+  width: 60rem;
+}
+button.btn-secondary{
+  background-image: linear-gradient(to right,#f1c40f 50%,#34495e 50%);
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  background-size: 200% auto;
+  background-position: 0% 0%;
+  padding: 1.5rem 4rem;
+  border-radius: 10px;
+  font-size: 1.4rem;
+  transition: 0.3s;
+}
+button.btn-secondary:hover{
+    background-position: right center;
+    cursor: pointer;
+}
+
+/*==============================================
+Contact Us
+================================================*/
+
+
+
+.map{
+  background-color: #ecf0f1;
+  width: 90vw;
+  margin:  0px 5vw;
+  height: auto;
+  padding: 10vh 0px;
+}
+.map .bottom
+{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; 
+  margin-top: 10vh;
+  flex-wrap: wrap;
+
+}
+.map .bottom .left iframe{
+  height:50rem;
+  width:50rem;
+}
+.map .bottom .right form{
+    display: flex;
+    flex-direction: column;
+}
+.map .bottom .right form input, .map .bottom .right form textarea{
+  margin: 20px 0px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  border: none;
+  width: 50rem;
+}
+.map .bottom .right form input:focus, .map .bottom .right form textarea:focus{
+  outline: 1px solid #000;
+}
+.map .bottom .right form button{
+  background-image: linear-gradient(to right,#3498db 50%,#34495e 50%);
+  width: fit-content;
+}
+
+.footer{
+  width: 100vw;
+  background-color: #000;
+  height: 10vh;
+  position: relative;
+  top: 0%;
+}
+
+/*==============================================
+Form  START
+================================================*/
+.form{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.form form input,.form form textarea{
+  width: 30vw;
+  padding: 1vh 1vw;
+  margin-top: 1vh;
+}
+
+/*==============================================
+Form  END
+================================================*/
+
+/*==============================================
+LOGIN FORM
+================================================*/
+.heading{
+  font-size: 4rem;
+  color: #fff;
+  padding-bottom: 5px;
+  border-bottom: 5px solid rgb(57, 156, 255);
+  width: fit-content;
+  margin-bottom: 2vh;
+}
+.formpage{
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../public/bgcar1.jpeg");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formpage .formcontainer{
+   width:30vw;  
+}
+.formpage .formcontainer input{
+  width: 30vw;
+  padding: 15px 1vw;
+  margin: 2vh 0px;
+  background-color: #c7c7c7;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.7rem;
+  border: 2px solid transparent;
+}
+.formpage .formcontainer input::placeholder{
+  color: #000;
+}
+.formpage .formcontainer input:focus{
+  outline: none;
+  background-color: #fff;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.formpage .formcontainer form label
+{
+  color:#ffffff;
+  font-size: 2rem;
+}
+.formpage .formcontainer form p{
+  color: rgb(214, 214, 214);
+  font-size: 1.6rem;
+  margin-bottom: 2vh;
+}
+.formpage .formcontainer form p a{
+  text-decoration: underline;
+}
+.formpage .formcontainer form button{
+  background-image: linear-gradient(to right,#3498db 50%,#34495e 50%);
+}
+
+
+.registerpage{
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../public/carbg2.jpg");
+}
+.registerpage .formcontainer form input{
+  padding: 0.8rem 3rem;
+  margin: 1rem 0px;
+}
+
+/*==============================================
+ADMIN
+================================================*/
+
+
+
+
+
+
+
+
+/*
+===============================================================================
+SHOP
+*/
+.shop
+{
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+.shop .hero, .carpreview .hero , .admin .hero{
+    height: 50vh;
+    background: linear-gradient(to right, #3A6073, #16222A); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin: 0;
+    flex-direction: column;
+}
+.shop .hero h1,.carpreview .hero h1,.admin .hero h1{
+  font-size: 5rem;
+  font-weight: 400;
+  color: #fff;
+}
+.shop .hero span,.carpreview .hero span,.admin .hero span{
+  margin-top: 10px;
+  color:#fff;
+}
+.shop .hero span a,.carpreview .hero span a,.admin .hero span a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.shop .hero .nav,.carpreview .hero .nav, .admin .hero .nav{
+  align-self: flex-start;
+  justify-self: flex-start;
+  position: absolute;
+  top: 0;
+}
+.shop .grid {
+  width: 90vw;
+  margin: 0px 5vw;
+}
+.shop .grid .top{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15rem;
+}
+.typecontainer{
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  overflow: hidden;
+}
+.typecontainer .type{
+  width: 12rem;
+  height: 12rem;
+  background-color: rgb(255, 255, 255);
+  margin: 0px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.typecontainer .type img{
+  width: 7rem;
+}
+.typecontainer .activetype{
+  
+  transform: scale(1.1);
+  cursor: pointer;
+  border-left: 5px solid #06c;
+  box-shadow: 0px 5px 6px -4px #292929;
+}
+
+/*
+===============================================================================
+ Admin
+*/
+.admin{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.admin table,tr,th,td{
+   
+    font-size: 2rem;
+    text-align: center;
+    border-collapse: collapse;
+    padding: 1rem 2rem;
+    border: none;
+    
+}
+.admin table th{
+  background-color: #ffffff;
+}
+.admin .main{
+  display: flex;
+  margin-top: 2vh;
+  margin: 10vh 0px;
+  box-shadow: 0px 4px 6px #000;
+}
+.admin .main .leftBar{
+  width: 10rem;
+  background-color: #2e86de;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60rem;
+  
+}
+.admin .main .leftBar ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.admin .main .leftBar li{
+  margin-top: 5rem;
+}
+.admin .main .leftBar li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 3rem;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.admin .main .leftBar li.active{
+  border-bottom: 2px solid #fff;
+  color: #c0dbff;
+}
+.admin .main .tablecontainer .table table{
+  width: 90rem;
+}
+
+.admin .main .tablecontainer .top{
+  display: flex;
+  justify-content: space-between;
+  padding: 2vh 1rem;  
+  align-items: center;
+  background-color: #ffffff;
+}
+.admin .main .tablecontainer .top h3{
+  font-size: 3rem;
+ 
+}
+.admin .main .top button{
+  background-image: none;
+  background-color: #20bf6b;
+  
+}
+.admin .main .tablecontainer .table{
+  height: 50rem;
+  overflow-y: scroll;
+}
+.admin .main .tablecontainer .table td{
+  border-left: 1px solid rgb(186, 186, 186);
+}
+.admin .main .tablecontainer .table tr button{
+  padding: 10px 20px;
+  font-size: 1.4rem;
+  border-radius: 10PX;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.admin .main .tablecontainer .table tr button:hover{
+  transform: scale(1.1);
+}
+
+
+.form a.back ,.formpage a.back{
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-decoration: none;
+  font-size: 1.6rem;
+  padding: 10px 20px;
+  text-align: center;
+  color: #2e86de;
+  font-weight: bold;
+  text-decoration:underline;
+  margin: 10px;
+  border-radius: 10px;
+}
+.delete .formcontainer{
+  background-color: #ffffff;
+  padding: 20px 3vw;
+  font-size: 2rem;
+  box-shadow: 0px 10px 9px -6px #292929;
+}
+.delete .formcontainer span{
+  color:#06c;
+  font-weight: bold;
+}
+.delete form input[type=text]{
+    width: 30rem;
+    font-size: 2rem;
+    border-radius: 5px;
+    border: none;
+  background-color: rgb(239, 239, 239);
+  }
+.delete form input[type=text]:focus{
+  outline: none;
+}
+.delete form input[type="submit"]:disabled{
+    border: none;
+    background-color: rgb(221, 221, 221);
+    color: rgb(162, 162, 162);
+}
+.delete form input[type="submit"]{
+  border: none;
+  color: #fff;
+  width: 10rem;
+  margin-bottom: 10px;
+  padding: 1vh 2vw;
+  background-color: #eb3b5a;
+}
+
+/*
+========================================
+Car Preview
+========================================
+*/
+.carpreview .container .bottom{
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  margin: 0px 5vw;
+  
+}
+.carpreview .container .bottom img,.carpreview .container .bottom p.desc{
+  width: 40vw;
+  align-self: center;
+}
+.carpreview .container .bottom p.desc{
+  width: 60vw;
+  margin-top: 50px;
+  text-align: center;
+}
+.carpreview .container .bottom{
+  font-size: 1.7rem;
+  margin-top: 20px;
+}
+.carpreview .container .bottom form{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  height: 30vh;
+  justify-content: space-evenly;
+}
+.carpreview .container .bottom form p.price{
+  font-size: 3rem;
+ 
+}
+.carpreview .container .bottom form input,.carpreview .container .bottom form button{
+  width: 30rem;
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: none;
+}
+.carpreview .container .bottom h3.heading{
+  font-size: 3rem;
+  color: #000;
+  font-weight: 400;
+ border-bottom: none;
+  margin: 20px 0px;
+}
+
+.carpreview .container .bottom .speccontainer{
+  display: flex;
+  flex-direction: column;
+}
+.carpreview .container .bottom .speccontainer div {
+  display: flex;
+  width: 50vw;
+  justify-content: space-between;
+  border-bottom: 2px solid grey;
+  padding: 10px 0px;
+}
+.carpreview .container .bottom .speccontainer div:nth-child(1)
+{
+  padding-top: 0;
+}
+.carpreview .container .bottom .speccontainer div h3{
+  font-weight: 400;
+}
+
+/* Order Preview Section */
+.carpreview .billcontainer{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+.carpreview .billcontainer h1{
+  margin: 10px 0px;
+}
+.carpreview .billcontainer form label{
+  font-size: 1.8rem;
+}
+.carpreview .billcontainer form input{
+  margin:  0px 10px;
+}
+
+/* Order Preview */
+
+.billcontainer .box table,.billcontainer .box table tr,.billcontainer .box table td, .billcontainer .box table th{
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
+
+/* Profile */
+
+.profile .container {
+  width: 90vw;
+  margin: 10px 5vw;
+  display: flex;
+  height: 70vh;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 8px 6px -6px #000;
+}
+.profile .container .left{
+  background-color: #06c;
+  color: #fff;
+  text-align: center;
+  padding: 10px 2vw;
+  text-transform: uppercase;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  
+}
+.profile .container .left img{
+  width: 8vw;
+  border-radius: 50%;
+}
+.profile .container .left button{
+
+  background-color: #eb3b5a;
+  color: #fff;
+  margin-top: 20px;
+}
+.profile .container .right{
+    font-size: 1.7rem;
+    padding-left: 2vw;
+   
+  }
+
+.profile .container .right h1,.profile .container .right h2{
+  font-weight: 400;
+}
+.profile .container .right h2{
+  font-size: 2.5rem;
+  margin-top: 20px;
+}
+.profile .container .right h2 span{
+  font-weight: 500;
+}
+.profile .container .right button{
+  padding: 15px;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  border: none;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+.profile .container .right button:hover{
+  background-color: #06c;
+  color: #fff;
+}
+.profile .container .right .ordercontainer{
+  background-color: #000;
+      font-size: 1.6rem;
+      display: inline;
+      overflow-y: scroll;
+}
+
+.profile .container .right .ordercontainer .orderitem{
+  background-color: rgb(227, 227, 227);
+  margin-top: 10px;
+  padding: 5px 5px;
+  border-radius: 5px;
+}
+
+/* NOT FOUND */
+.notfound{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+.notfound h1{
+  font-weight: 400;
+  margin: 10px 0px;
+}
+
+/* Update Car Form */
+.updatecar{
+  background-image: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../public/uploads/cars/tesla.webp");
+  background-size: cover;
+}
+.updatecar h1{
+  font-size: 3rem;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.updatecar input[type="submit"]{
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.updatecar input, .updatecar textarea
+{
+  border-radius: 10px;
+  border: none;
+  padding: 25px 0px;
+  background-color: rgb(255, 255, 255);
+}
+
+/* Responsive  */
+
+@media (max-width:720px) {
+    html{
+      font-size: 50%;
+      overflow-x: hidden;
+    }
+}
+@media (max-width:500px) {
+  
+  .hero .right .container{
+    width: 0;
+  }
+  .hero .right .container img{
+    width: 0;
+  }
+  .map .bottom .right form input, .map .bottom .right form textarea
+  {
+    width: 40rem;
+  }
+
+    
+
+  .home .hero .left button {
+    width: 50vw;
+  }
+  .aboutus .bottom .left img{
+    width: 80vw;
+  }
+
+
+  .map .bottom .left iframe
+  {
+    width: 30rem;
+  }
+  .formpage .formcontainer{
+    width: 70vw;
+  }
+  .formpage .formcontainer input
+  {
+    width: 70vw;
+  }
+
+  .typecontainer .type {
+    width: 8rem;
+    height: 6rem;
+    background-color: rgb(255, 255, 255);
+    margin: 4px 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.typecontainer .type img {
+  width: 4rem;
+}
+}

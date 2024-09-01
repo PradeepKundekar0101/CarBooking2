@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.598f42be.css",
+    "main.js": "/static/js/main.5221e14e.js",
+    "static/media/carbg2.jpg": "/static/media/carbg2.a90580e4da3fc8df79bc.jpg",
+    "static/media/bgcar1.jpeg": "/static/media/bgcar1.47f7f03715c4d4b4320f.jpeg",
+    "static/media/tesla.webp": "/static/media/tesla.8f59fae6e66a4f311edb.webp",
+    "index.html": "/index.html",
+    "main.598f42be.css.map": "/static/css/main.598f42be.css.map",
+    "main.5221e14e.js.map": "/static/js/main.5221e14e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.598f42be.css",
+    "static/js/main.5221e14e.js"
+  ]
+}
